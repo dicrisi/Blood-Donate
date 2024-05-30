@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <tr>
+         <th>Id</th>
+         <th>User Id</th>
+         <th>Password</th>
+         <th>Name</th>
+         <th>Age</th>
+         <th>DOB</th>
+         <th>Address</th>
+         <th>Phone</th>
+         <th>EMail</th>
+            </tr>
+          {% for row in data %}
+        <tr>
+         <td>{{row['id']}}</td>
+         <td>{{row['uid']}}</td>
+         <td>{{row['pwd']}}</td>
+         <td>{{row['name']}}</td>
+         <td>{{row['age']}}</td>
+         <td>{{row['dob']}}</td>
+         <td>{{row['addr']}}</td>
+         <td>{{row['phone']}}</td>
+         <td>{{row['email']}}</td>
+        </tr>
+    {% endfor %}
+      </table>
+   </body>
+</html>
+
+
+<link href="static/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery-1.3.2.min.js"></script>
+
+
+"/aupdclickuser"
